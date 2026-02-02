@@ -14,8 +14,8 @@ A real-time video conferencing and collaboration web application built using Web
 HTML, CSS, JavaScript, Node.js, Express.js, Socket.io, WebRTC
 
 #Screenshot
-![Social Media](Screenshots/image1.png)
-![Social Media](Screenshots/image2.png)
+![Real time Communication App](Screenshots/image1.png)
+![Real time Communication App](Screenshots/image2.png)
 
 ## Run Project
 ```bash
