@@ -15,6 +15,7 @@ HTML, CSS, JavaScript, Node.js, Express.js, Socket.io, WebRTC
 
 #Screenshot
 ![Social Media](Screenshots/image1.png)
+![Social Media](Screenshots/image2.png)
 
 ## Run Project
 ```bash
