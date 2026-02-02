@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meeting Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="meeting-body">
+
+  <!-- LEFT PANEL -->
+  <div class="side-panel">
+    <h3>Shared Files</h3>
+    <div id="files"></div>
+  </div>
+
+  <!-- MAIN AREA -->
+  <div class="main-area">
+
+    <!-- VIDEO -->
+    <div class="video-wrapper">
+      <video id="localVideo" autoplay muted></video>
+    </div>
+
+    <!-- WHITEBOARD -->
+    <canvas id="board"></canvas>
+
+    <!-- CONTROLS -->
+    <div class="control-bar">
+      <button onclick="startVideo()">📹 Video</button>
+      <button onclick="shareScreen()">🖥 Screen</button>
+      <button onclick="toggleBoard()">📝 Whiteboard</button>
+      <button onclick="sendFile()">📁 File</button>
+    </div>
+
+  </div>
+
+  <input type="file" id="fileInput" hidden>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

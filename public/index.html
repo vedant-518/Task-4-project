@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Meeting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+
+<div class="card">
+  <h1>Video Meeting App</h1>
+  <input id="username" placeholder="Enter your name">
+  <input id="room" placeholder="Meeting ID">
+  <button onclick="join()">Join Meeting</button>
+</div>
+
+<script>
+function join() {
+  const name = document.getElementById("username").value;
+  const room = document.getElementById("room").value;
+  if(name && room){
+    window.location.href = `meeting.html?room=${room}&name=${name}`;
+  }
+}
+</script>
+<body class="join-page"></body>
+
+</body>
+</html>
